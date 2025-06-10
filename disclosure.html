@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="레드로지스틱스의 공시 정보와 규정 공고를 확인하세요." />
+        <title>공시 정보 - 레드로지스틱스</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <div class="nav-container">
+                    <div class="logo">
+                        <a href="index.html">
+                            <h1>레드로지스틱스</h1>
+                            <span class="logo-subtitle">RED LOGISTICS</span>
+                        </a>
+                    </div>
+                    <ul class="nav-menu">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">회사소개</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="ceo-message.html">CEO 인사말</a></li>
+                                <li><a href="history.html">연혁</a></li>
+                                <li><a href="location.html">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">고객지원</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="inquiry.html">문의</a></li>
+                                <li><a href="notice.html">공지사항</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link active">투자정보</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="financial.html">재무 정보</a></li>
+                                <li><a href="stock.html">주식 정보</a></li>
+                                <li><a href="disclosure.html" class="active">공시 정보</a></li>
+                                <li><a href="ir-materials.html">공고/IR 자료</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="recruitment.html" class="nav-link">인재채용</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="business-areas.html" class="nav-link">사업영역</a>
+                        </li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <section class="page-header">
+                <div class="container">
+                    <div class="breadcrumb">
+                        <a href="index.html">홈</a> > <span>투자정보</span> > <span>공시 정보</span>
+                    </div>
+                    <h1 class="page-title">공시 정보</h1>
+                    <p class="page-subtitle">금융감독원 전자공시시스템(DART)을 통한 공시 정보를 제공합니다</p>
+                </div>
+            </section>
+
+            <section class="disclosure-search">
+                <div class="container">
+                    <div class="search-filter-container">
+                        <div class="search-box">
+                            <input
+                                type="text"
+                                id="disclosureSearch"
+                                placeholder="공시 제목으로 검색"
+                                class="search-input" />
+                            <button class="search-btn">🔍</button>
+                        </div>
+                        <div class="filter-options">
+                            <select id="disclosureType" class="filter-select">
+                                <option value="">전체 공시</option>
+                                <option value="audit">감사보고서</option>
+                                <option value="quarter">분기보고서</option>
+                                <option value="annual">사업보고서</option>
+                                <option value="major">주요사항보고서</option>
+                                <option value="regular">정기공시</option>
+                            </select>
+                            <select id="disclosurePeriod" class="filter-select">
+                                <option value="">전체 기간</option>
+                                <option value="1m">최근 1개월</option>
+                                <option value="3m">최근 3개월</option>
+                                <option value="6m">최근 6개월</option>
+                                <option value="1y">최근 1년</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="disclosure-summary">
+                <div class="container">
+                    <h2 class="section-title">주요 공시 현황</h2>
+                    <div class="summary-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">📋</div>
+                            <div class="stat-content">
+                                <h3 class="stat-number">24건</h3>
+                                <p class="stat-label">올해 공시 건수</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">📊</div>
+                            <div class="stat-content">
+                                <h3 class="stat-number">4건</h3>
+                                <p class="stat-label">분기 보고서</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">⚠️</div>
+                            <div class="stat-content">
+                                <h3 class="stat-number">3건</h3>
+                                <p class="stat-label">주요사항 보고</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🔍</div>
+                            <div class="stat-content">
+                                <h3 class="stat-number">1건</h3>
+                                <p class="stat-label">감사보고서</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="disclosure-list-section">
+                <div class="container">
+                    <div class="disclosure-header">
+                        <h2 class="section-title">공시 목록</h2>
+                        <div class="external-link">
+                            <a href="https://dart.fss.or.kr" target="_blank" class="dart-link"> DART 바로가기 📎 </a>
+                        </div>
+                    </div>
+
+                    <div class="disclosure-table">
+                        <div class="table-header">
+                            <div class="col-date">공시일</div>
+                            <div class="col-type">공시유형</div>
+                            <div class="col-title">공시제목</div>
+                            <div class="col-status">진행상태</div>
+                            <div class="col-action">보기</div>
+                        </div>
+
+                        <div class="disclosure-items">
+                            <div class="disclosure-item important">
+                                <div class="col-date">
+                                    <span class="date">2024.06.10</span>
+                                    <span class="time">16:00</span>
+                                </div>
+                                <div class="col-type">
+                                    <span class="type-badge quarter">분기보고서</span>
+                                </div>
+                                <div class="col-title">
+                                    <a href="#" class="disclosure-link"> [첨부추가] 분기보고서 (2024.03) </a>
+                                    <span class="important-badge">중요</span>
+                                </div>
+                                <div class="col-status">
+                                    <span class="status-badge completed">공시완료</span>
+                                </div>
+                                <div class="col-action">
+                                    <button class="view-btn">📄 원문</button>
+                                </div>
+                            </div>
+
+                            <div class="disclosure-item">
+                                <div class="col-date">
+                                    <span class="date">2024.06.08</span>
+                                    <span class="time">09:30</span>
+                                </div>
+                                <div class="col-type">
+                                    <span class="type-badge major">주요사항보고서</span>
+                                </div>
+                                <div class="col-title">
+                                    <a href="#" class="disclosure-link"> 최대주주등소유주식변동신고서 </a>
+                                </div>
+                                <div class="col-status">
+                                    <span class="status-badge completed">공시완료</span>
+                                </div>
+                                <div class="col-action">
+                                    <button class="view-btn">📄 원문</button>
+                                </div>
+                            </div>
+
+                            <div class="disclosure-item">
+                                <div class="col-date">
+                                    <span class="date">2024.06.05</span>
+                                    <span class="time">15:45</span>
+                                </div>
+                                <div class="col-type">
+                                    <span class="type-badge regular">정기공시</span>
+                                </div>
+                                <div class="col-title">
+                                    <a href="#" class="disclosure-link"> 주주총회소집결정 </a>
+                                </div>
+                                <div class="col-status">
+                                    <span class="status-badge completed">공시완료</span>
+                                </div>
+                                <div class="col-action">
+                                    <button class="view-btn">📄 원문</button>
+                                </div>
+                            </div>
+
+                            <div class="disclosure-item">
+                                <div class="col-date">
+                                    <span class="date">2024.05.15</span>
+                                    <span class="time">10:00</span>
+                                </div>
+                                <div class="col-type">
+                                    <span class="type-badge quarter">분기보고서</span>
+                                </div>
+                                <div class="col-title">
+                                    <a href="#" class="disclosure-link"> 분기보고서 (2024.03) </a>
+                                </div>
+                                <div class="col-status">
+                                    <span class="status-badge completed">공시완료</span>
+                                </div>
+                                <div class="col-action">
+                                    <button class="view-btn">📄 원문</button>
+                                </div>
+                            </div>
+
+                            <div class="disclosure-item">
+                                <div class="col-date">
+                                    <span class="date">2024.04.30</span>
+                                    <span class="time">17:30</span>
+                                </div>
+                                <div class="col-type">
+                                    <span class="type-badge major">주요사항보고서</span>
+                                </div>
+                                <div class="col-title">
+                                    <a href="#" class="disclosure-link"> 자회사 설립결정 </a>
+                                </div>
+                                <div class="col-status">
+                                    <span class="status-badge completed">공시완료</span>
+                                </div>
+                                <div class="col-action">
+                                    <button class="view-btn">📄 원문</button>
+                                </div>
+                            </div>
+
+                            <div class="disclosure-item">
+                                <div class="col-date">
+                                    <span class="date">2024.03.31</span>
+                                    <span class="time">09:00</span>
+                                </div>
+                                <div class="col-type">
+                                    <span class="type-badge audit">감사보고서</span>
+                                </div>
+                                <div class="col-title">
+                                    <a href="#" class="disclosure-link"> 감사보고서 (2023.12) </a>
+                                </div>
+                                <div class="col-status">
+                                    <span class="status-badge completed">공시완료</span>
+                                </div>
+                                <div class="col-action">
+                                    <button class="view-btn">📄 원문</button>
+                                </div>
+                            </div>
+
+                            <div class="disclosure-item">
+                                <div class="col-date">
+                                    <span class="date">2024.03.25</span>
+                                    <span class="time">14:20</span>
+                                </div>
+                                <div class="col-type">
+                                    <span class="type-badge annual">사업보고서</span>
+                                </div>
+                                <div class="col-title">
+                                    <a href="#" class="disclosure-link"> 사업보고서 (2023.12) </a>
+                                </div>
+                                <div class="col-status">
+                                    <span class="status-badge completed">공시완료</span>
+                                </div>
+                                <div class="col-action">
+                                    <button class="view-btn">📄 원문</button>
+                                </div>
+                            </div>
+
+                            <div class="disclosure-item">
+                                <div class="col-date">
+                                    <span class="date">2024.02.28</span>
+                                    <span class="time">16:00</span>
+                                </div>
+                                <div class="col-type">
+                                    <span class="type-badge quarter">분기보고서</span>
+                                </div>
+                                <div class="col-title">
+                                    <a href="#" class="disclosure-link"> 분기보고서 (2023.12) </a>
+                                </div>
+                                <div class="col-status">
+                                    <span class="status-badge completed">공시완료</span>
+                                </div>
+                                <div class="col-action">
+                                    <button class="view-btn">📄 원문</button>
+                                </div>
+                            </div>
+
+                            <div class="disclosure-item">
+                                <div class="col-date">
+                                    <span class="date">2024.01.30</span>
+                                    <span class="time">11:15</span>
+                                </div>
+                                <div class="col-type">
+                                    <span class="type-badge major">주요사항보고서</span>
+                                </div>
+                                <div class="col-title">
+                                    <a href="#" class="disclosure-link"> 타법인 주식 및 출자증권 취득결정 </a>
+                                </div>
+                                <div class="col-status">
+                                    <span class="status-badge completed">공시완료</span>
+                                </div>
+                                <div class="col-action">
+                                    <button class="view-btn">📄 원문</button>
+                                </div>
+                            </div>
+
+                            <div class="disclosure-item">
+                                <div class="col-date">
+                                    <span class="date">2024.01.15</span>
+                                    <span class="time">08:30</span>
+                                </div>
+                                <div class="col-type">
+                                    <span class="type-badge regular">정기공시</span>
+                                </div>
+                                <div class="col-title">
+                                    <a href="#" class="disclosure-link"> 임원현황 </a>
+                                </div>
+                                <div class="col-status">
+                                    <span class="status-badge completed">공시완료</span>
+                                </div>
+                                <div class="col-action">
+                                    <button class="view-btn">📄 원문</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pagination">
+                        <button class="page-btn prev" disabled>이전</button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <button class="page-btn">4</button>
+                        <button class="page-btn">5</button>
+                        <button class="page-btn next">다음</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="disclosure-guide">
+                <div class="container">
+                    <h2 class="section-title">공시 안내</h2>
+                    <div class="guide-grid">
+                        <div class="guide-card">
+                            <div class="guide-icon">📋</div>
+                            <h3 class="guide-title">공시 의무</h3>
+                            <p class="guide-description">
+                                자본시장법에 따라 투자자 보호를 위해 주요 경영사항을 투명하게 공시합니다.
+                            </p>
+                        </div>
+                        <div class="guide-card">
+                            <div class="guide-icon">⏰</div>
+                            <h3 class="guide-title">공시 시점</h3>
+                            <p class="guide-description">
+                                주요사항 결정 즉시, 정기적으로 공시 의무가 발생하는 사항들을 공시합니다.
+                            </p>
+                        </div>
+                        <div class="guide-card">
+                            <div class="guide-icon">🔍</div>
+                            <h3 class="guide-title">DART 시스템</h3>
+                            <p class="guide-description">
+                                금융감독원의 전자공시시스템을 통해 모든 공시가 투명하게 공개됩니다.
+                            </p>
+                        </div>
+                        <div class="guide-card">
+                            <div class="guide-icon">📱</div>
+                            <h3 class="guide-title">공시 알림</h3>
+                            <p class="guide-description">
+                                중요 공시 발생 시 이메일 및 SMS로 투자자에게 신속하게 알려드립니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="disclosure-notification">
+                <div class="container">
+                    <div class="notification-box">
+                        <h2 class="notification-title">공시 알림 서비스</h2>
+                        <p class="notification-description">
+                            레드로지스틱스의 주요 공시를 이메일로 받아보세요. 투자 결정에 필요한 정보를 빠르게 확인할 수
+                            있습니다.
+                        </p>
+                        <form class="notification-form">
+                            <input type="email" placeholder="이메일 주소를 입력해주세요" class="email-input" />
+                            <button type="submit" class="subscribe-btn">알림 신청</button>
+                        </form>
+                        <p class="notification-note">
+                            * 개인정보는 공시 알림 목적으로만 사용되며, 언제든지 구독을 해지할 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3 class="footer-title">레드로지스틱스</h3>
+                        <p class="footer-description">
+                            글로벌 종합물류기업으로서 혁신적인 물류 솔루션을 통해 고객의 성공을 지원합니다.
+                        </p>
+                        <div class="footer-contact">
+                            <p>📞 대표전화: 02-2000-3000</p>
+                            <p>✉️ 이메일: info@redlogistics.co.kr</p>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h4 class="footer-subtitle">회사소개</h4>
+                        <ul class="footer-links">
+                            <li><a href="ceo-message.html">CEO 인사말</a></li>
+                            <li><a href="history.html">연혁</a></li>
+                            <li><a href="location.html">오시는 길</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4 class="footer-subtitle">고객지원</h4>
+                        <ul class="footer-links">
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="inquiry.html">문의</a></li>
+                            <li><a href="notice.html">공지사항</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4 class="footer-subtitle">투자정보</h4>
+                        <ul class="footer-links">
+                            <li><a href="financial.html">재무 정보</a></li>
+                            <li><a href="stock.html">주식 정보</a></li>
+                            <li><a href="disclosure.html">공시 정보</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 레드로지스틱스(주). All rights reserved.</p>
+                    <p>서울특별시 중구 세종대로 110 | 사업자등록번호: 123-45-67890</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

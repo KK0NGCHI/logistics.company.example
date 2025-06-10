@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="레드로지스틱스의 재무현황과 실적을 확인하세요." />
+        <title>재무 정보 - 레드로지스틱스</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <div class="nav-container">
+                    <div class="logo">
+                        <a href="index.html">
+                            <h1>레드로지스틱스</h1>
+                            <span class="logo-subtitle">RED LOGISTICS</span>
+                        </a>
+                    </div>
+                    <ul class="nav-menu">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">회사소개</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="ceo-message.html">CEO 인사말</a></li>
+                                <li><a href="history.html">연혁</a></li>
+                                <li><a href="location.html">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">고객지원</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="inquiry.html">문의</a></li>
+                                <li><a href="notice.html">공지사항</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link active">투자정보</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="financial.html" class="active">재무 정보</a></li>
+                                <li><a href="stock.html">주식 정보</a></li>
+                                <li><a href="disclosure.html">공시 정보</a></li>
+                                <li><a href="ir-materials.html">공고/IR 자료</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="recruitment.html" class="nav-link">인재채용</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="business-areas.html" class="nav-link">사업영역</a>
+                        </li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <section class="page-header">
+                <div class="container">
+                    <div class="breadcrumb">
+                        <a href="index.html">홈</a> > <span>투자정보</span> > <span>재무 정보</span>
+                    </div>
+                    <h1 class="page-title">재무 정보</h1>
+                    <p class="page-subtitle">레드로지스틱스의 재무현황과 경영실적을 투명하게 공개합니다</p>
+                </div>
+            </section>
+
+            <section class="financial-summary">
+                <div class="container">
+                    <h2 class="section-title">재무 하이라이트</h2>
+                    <div class="summary-grid">
+                        <div class="summary-card revenue">
+                            <div class="card-icon">📈</div>
+                            <div class="card-content">
+                                <h3 class="card-title">2023년 매출액</h3>
+                                <p class="card-value">1조 2,456억원</p>
+                                <p class="card-change positive">+15.2% (전년 대비)</p>
+                            </div>
+                        </div>
+                        <div class="summary-card profit">
+                            <div class="card-icon">💰</div>
+                            <div class="card-content">
+                                <h3 class="card-title">영업이익</h3>
+                                <p class="card-value">1,523억원</p>
+                                <p class="card-change positive">+22.8% (전년 대비)</p>
+                            </div>
+                        </div>
+                        <div class="summary-card net-profit">
+                            <div class="card-icon">💎</div>
+                            <div class="card-content">
+                                <h3 class="card-title">당기순이익</h3>
+                                <p class="card-value">1,089억원</p>
+                                <p class="card-change positive">+18.5% (전년 대비)</p>
+                            </div>
+                        </div>
+                        <div class="summary-card assets">
+                            <div class="card-icon">🏢</div>
+                            <div class="card-content">
+                                <h3 class="card-title">총자산</h3>
+                                <p class="card-value">5조 3,241억원</p>
+                                <p class="card-change positive">+12.3% (전년 대비)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="financial-statements">
+                <div class="container">
+                    <h2 class="section-title">재무제표</h2>
+                    <div class="statements-tabs">
+                        <button class="tab-btn active" data-tab="income">손익계산서</button>
+                        <button class="tab-btn" data-tab="balance">재무상태표</button>
+                        <button class="tab-btn" data-tab="cashflow">현금흐름표</button>
+                    </div>
+
+                    <div class="tab-content active" id="income">
+                        <div class="financial-table">
+                            <h3 class="table-title">손익계산서 (단위: 억원)</h3>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>항목</th>
+                                        <th>2023년</th>
+                                        <th>2022년</th>
+                                        <th>2021년</th>
+                                        <th>증감률</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>매출액</strong></td>
+                                        <td>12,456</td>
+                                        <td>10,812</td>
+                                        <td>9,234</td>
+                                        <td class="positive">+15.2%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>매출원가</td>
+                                        <td>9,234</td>
+                                        <td>8,123</td>
+                                        <td>7,089</td>
+                                        <td class="positive">+13.7%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>매출총이익</strong></td>
+                                        <td>3,222</td>
+                                        <td>2,689</td>
+                                        <td>2,145</td>
+                                        <td class="positive">+19.8%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>판매관리비</td>
+                                        <td>1,699</td>
+                                        <td>1,448</td>
+                                        <td>1,234</td>
+                                        <td class="positive">+17.3%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>영업이익</strong></td>
+                                        <td>1,523</td>
+                                        <td>1,241</td>
+                                        <td>911</td>
+                                        <td class="positive">+22.8%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>금융손익</td>
+                                        <td>-156</td>
+                                        <td>-178</td>
+                                        <td>-134</td>
+                                        <td class="positive">+12.4%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>기타손익</td>
+                                        <td>45</td>
+                                        <td>32</td>
+                                        <td>28</td>
+                                        <td class="positive">+40.6%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>법인세차감전순이익</strong></td>
+                                        <td>1,412</td>
+                                        <td>1,095</td>
+                                        <td>805</td>
+                                        <td class="positive">+28.9%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>법인세비용</td>
+                                        <td>323</td>
+                                        <td>256</td>
+                                        <td>189</td>
+                                        <td class="positive">+26.2%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>당기순이익</strong></td>
+                                        <td>1,089</td>
+                                        <td>839</td>
+                                        <td>616</td>
+                                        <td class="positive">+29.8%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="balance">
+                        <div class="financial-table">
+                            <h3 class="table-title">재무상태표 (단위: 억원)</h3>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>항목</th>
+                                        <th>2023년</th>
+                                        <th>2022년</th>
+                                        <th>2021년</th>
+                                        <th>증감률</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="5" class="category-header"><strong>자산</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>유동자산</td>
+                                        <td>18,456</td>
+                                        <td>16,234</td>
+                                        <td>14,123</td>
+                                        <td class="positive">+13.7%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>비유동자산</td>
+                                        <td>34,785</td>
+                                        <td>31,223</td>
+                                        <td>28,567</td>
+                                        <td class="positive">+11.4%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>자산총계</strong></td>
+                                        <td>53,241</td>
+                                        <td>47,457</td>
+                                        <td>42,690</td>
+                                        <td class="positive">+12.2%</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="5" class="category-header"><strong>부채</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>유동부채</td>
+                                        <td>12,345</td>
+                                        <td>11,234</td>
+                                        <td>10,123</td>
+                                        <td class="positive">+9.9%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>비유동부채</td>
+                                        <td>18,567</td>
+                                        <td>17,234</td>
+                                        <td>16,456</td>
+                                        <td class="positive">+7.7%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>부채총계</strong></td>
+                                        <td>30,912</td>
+                                        <td>28,468</td>
+                                        <td>26,579</td>
+                                        <td class="positive">+8.6%</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="5" class="category-header"><strong>자본</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>자본금</td>
+                                        <td>5,000</td>
+                                        <td>5,000</td>
+                                        <td>5,000</td>
+                                        <td>0.0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>이익잉여금</td>
+                                        <td>17,329</td>
+                                        <td>13,989</td>
+                                        <td>11,111</td>
+                                        <td class="positive">+23.9%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>자본총계</strong></td>
+                                        <td>22,329</td>
+                                        <td>18,989</td>
+                                        <td>16,111</td>
+                                        <td class="positive">+17.6%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="cashflow">
+                        <div class="financial-table">
+                            <h3 class="table-title">현금흐름표 (단위: 억원)</h3>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>항목</th>
+                                        <th>2023년</th>
+                                        <th>2022년</th>
+                                        <th>2021년</th>
+                                        <th>증감률</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>영업활동 현금흐름</strong></td>
+                                        <td>2,456</td>
+                                        <td>2,123</td>
+                                        <td>1,789</td>
+                                        <td class="positive">+15.7%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>당기순이익</td>
+                                        <td>1,089</td>
+                                        <td>839</td>
+                                        <td>616</td>
+                                        <td class="positive">+29.8%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>감가상각비</td>
+                                        <td>1,234</td>
+                                        <td>1,156</td>
+                                        <td>1,089</td>
+                                        <td class="positive">+6.7%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>운전자본 변동</td>
+                                        <td>133</td>
+                                        <td>128</td>
+                                        <td>84</td>
+                                        <td class="positive">+3.9%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>투자활동 현금흐름</strong></td>
+                                        <td>-1,789</td>
+                                        <td>-1,456</td>
+                                        <td>-1,234</td>
+                                        <td class="negative">-22.9%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>시설투자</td>
+                                        <td>-1,567</td>
+                                        <td>-1,234</td>
+                                        <td>-1,089</td>
+                                        <td class="negative">-27.0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>무형자산투자</td>
+                                        <td>-222</td>
+                                        <td>-222</td>
+                                        <td>-145</td>
+                                        <td>0.0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>재무활동 현금흐름</strong></td>
+                                        <td>-234</td>
+                                        <td>-345</td>
+                                        <td>-123</td>
+                                        <td class="positive">+32.2%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>배당금 지급</td>
+                                        <td>-456</td>
+                                        <td>-389</td>
+                                        <td>-234</td>
+                                        <td class="negative">-17.2%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>차입금 증감</td>
+                                        <td>222</td>
+                                        <td>44</td>
+                                        <td>111</td>
+                                        <td class="positive">+404.5%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>현금 및 현금성자산 증감</strong></td>
+                                        <td>433</td>
+                                        <td>322</td>
+                                        <td>432</td>
+                                        <td class="positive">+34.5%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="financial-ratios">
+                <div class="container">
+                    <h2 class="section-title">주요 재무비율</h2>
+                    <div class="ratios-grid">
+                        <div class="ratio-category">
+                            <h3 class="category-title">수익성 지표</h3>
+                            <div class="ratio-items">
+                                <div class="ratio-item">
+                                    <span class="ratio-name">매출액영업이익률</span>
+                                    <span class="ratio-value">12.2%</span>
+                                    <span class="ratio-change positive">+0.8%p</span>
+                                </div>
+                                <div class="ratio-item">
+                                    <span class="ratio-name">매출액순이익률</span>
+                                    <span class="ratio-value">8.7%</span>
+                                    <span class="ratio-change positive">+1.0%p</span>
+                                </div>
+                                <div class="ratio-item">
+                                    <span class="ratio-name">ROE (자기자본이익률)</span>
+                                    <span class="ratio-value">4.9%</span>
+                                    <span class="ratio-change positive">+0.5%p</span>
+                                </div>
+                                <div class="ratio-item">
+                                    <span class="ratio-name">ROA (총자산이익률)</span>
+                                    <span class="ratio-value">2.0%</span>
+                                    <span class="ratio-change positive">+0.2%p</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ratio-category">
+                            <h3 class="category-title">안정성 지표</h3>
+                            <div class="ratio-items">
+                                <div class="ratio-item">
+                                    <span class="ratio-name">부채비율</span>
+                                    <span class="ratio-value">138.4%</span>
+                                    <span class="ratio-change positive">-5.2%p</span>
+                                </div>
+                                <div class="ratio-item">
+                                    <span class="ratio-name">자기자본비율</span>
+                                    <span class="ratio-value">41.9%</span>
+                                    <span class="ratio-change positive">+1.9%p</span>
+                                </div>
+                                <div class="ratio-item">
+                                    <span class="ratio-name">유동비율</span>
+                                    <span class="ratio-value">149.5%</span>
+                                    <span class="ratio-change positive">+5.1%p</span>
+                                </div>
+                                <div class="ratio-item">
+                                    <span class="ratio-name">당좌비율</span>
+                                    <span class="ratio-value">118.7%</span>
+                                    <span class="ratio-change positive">+3.3%p</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ratio-category">
+                            <h3 class="category-title">활동성 지표</h3>
+                            <div class="ratio-items">
+                                <div class="ratio-item">
+                                    <span class="ratio-name">총자산회전율</span>
+                                    <span class="ratio-value">0.23회</span>
+                                    <span class="ratio-change positive">+0.01회</span>
+                                </div>
+                                <div class="ratio-item">
+                                    <span class="ratio-name">매출채권회전율</span>
+                                    <span class="ratio-value">8.9회</span>
+                                    <span class="ratio-change positive">+0.7회</span>
+                                </div>
+                                <div class="ratio-item">
+                                    <span class="ratio-name">재고자산회전율</span>
+                                    <span class="ratio-value">12.4회</span>
+                                    <span class="ratio-change positive">+1.2회</span>
+                                </div>
+                                <div class="ratio-item">
+                                    <span class="ratio-name">매입채무회전율</span>
+                                    <span class="ratio-value">6.7회</span>
+                                    <span class="ratio-change positive">+0.3회</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="financial-downloads">
+                <div class="container">
+                    <h2 class="section-title">재무자료 다운로드</h2>
+                    <div class="download-grid">
+                        <div class="download-item">
+                            <div class="file-icon">📊</div>
+                            <div class="file-info">
+                                <h3 class="file-title">2023년 감사보고서</h3>
+                                <p class="file-description">연결재무제표 및 개별재무제표</p>
+                                <p class="file-meta">PDF | 2.3MB | 2024.03.15</p>
+                            </div>
+                            <button class="download-btn">다운로드</button>
+                        </div>
+
+                        <div class="download-item">
+                            <div class="file-icon">📈</div>
+                            <div class="file-info">
+                                <h3 class="file-title">분기별 실적 발표자료</h3>
+                                <p class="file-description">2024년 1분기 실적 발표</p>
+                                <p class="file-meta">PDF | 1.8MB | 2024.05.10</p>
+                            </div>
+                            <button class="download-btn">다운로드</button>
+                        </div>
+
+                        <div class="download-item">
+                            <div class="file-icon">📋</div>
+                            <div class="file-info">
+                                <h3 class="file-title">재무제표 요약</h3>
+                                <p class="file-description">최근 5개년 재무제표 요약</p>
+                                <p class="file-meta">Excel | 1.2MB | 2024.03.20</p>
+                            </div>
+                            <button class="download-btn">다운로드</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3 class="footer-title">레드로지스틱스</h3>
+                        <p class="footer-description">
+                            글로벌 종합물류기업으로서 혁신적인 물류 솔루션을 통해 고객의 성공을 지원합니다.
+                        </p>
+                        <div class="footer-contact">
+                            <p>📞 대표전화: 02-2000-3000</p>
+                            <p>✉️ 이메일: info@redlogistics.co.kr</p>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h4 class="footer-subtitle">회사소개</h4>
+                        <ul class="footer-links">
+                            <li><a href="ceo-message.html">CEO 인사말</a></li>
+                            <li><a href="history.html">연혁</a></li>
+                            <li><a href="location.html">오시는 길</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4 class="footer-subtitle">고객지원</h4>
+                        <ul class="footer-links">
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="inquiry.html">문의</a></li>
+                            <li><a href="notice.html">공지사항</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4 class="footer-subtitle">투자정보</h4>
+                        <ul class="footer-links">
+                            <li><a href="financial.html">재무 정보</a></li>
+                            <li><a href="stock.html">주식 정보</a></li>
+                            <li><a href="disclosure.html">공시 정보</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 레드로지스틱스(주). All rights reserved.</p>
+                    <p>서울특별시 중구 세종대로 110 | 사업자등록번호: 123-45-67890</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
